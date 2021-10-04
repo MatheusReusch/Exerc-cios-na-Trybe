@@ -1,0 +1,10 @@
+#habilidades {color: #174b8f;}
+    #lista {background-color: #c8c6c6; color: rgb(5, 4, 4); font-weight: bold;
+    line-height: 40px; text-decoration: underline; width: 20%;}
+    body {background-color: #f1efe8;}
+    #lista2 {line-height: 40px;}
+    #titulo {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .final {background-color: darkkhaki; width: 20%;}
+    .rolagem {width: 80%;height: 575px; overflow: auto;}
+    .button {padding: 10px;background-color: rgb(100, 100, 241); text-decoration: none; border-radius: 10px;color: black;}
+    .button2 {padding: 10px;background-color: rgb(148, 136, 130);text-decoration: none;border-radius: 10px;color: black;}
