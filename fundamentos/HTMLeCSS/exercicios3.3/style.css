@@ -1,10 +1,33 @@
-#habilidades {color: #174b8f;}
-    #lista {background-color: #c8c6c6; color: rgb(5, 4, 4); font-weight: bold;
-    line-height: 40px; text-decoration: underline; width: 20%;}
-    body {background-color: #f1efe8;}
-    #lista2 {line-height: 40px;}
-    #titulo {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-    .final {background-color: darkkhaki; width: 20%;}
-    .rolagem {width: 80%;height: 575px; overflow: auto;}
-    .button {padding: 10px;background-color: rgb(100, 100, 241); text-decoration: none; border-radius: 10px;color: black;}
-    .button2 {padding: 10px;background-color: rgb(148, 136, 130);text-decoration: none;border-radius: 10px;color: black;}
+h1 {font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;border-style: outset;}
+#foto {display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+height: auto;border-style: double; border-radius: 50%;}
+#sobre {font-size: x-large; width: 80%;}
+#dados {font-size: x-large;}
+.listas {font-size: x-large;}
+#linkedin {padding: 10px;background-color: rgb(100, 100, 241); text-decoration: none; border-radius: 10px;color: black;font-size: x-large;}
+#github {padding: 10px;background-color: rgb(148, 136, 130);text-decoration: none;border-radius: 10px;color: black;font-size: x-large;}
+#thabilidades {font-size: x-large; color: rgb(72, 72, 230);text-decoration: underline;}
+#habilidades {font-size: x-large;font-weight: bold;background-color: #c8c6c6;line-height: 50px;width: 25%;}
+#html {position: relative;float: right;width: 100px;top: -25px;left: -70px;}
+#css {position: relative;float: right;width: 70px;bottom: -20px;right: -50px;}
+#notebook {position: relative;float: inline-end;width: 250px;right: -25px;}
+#toutras {font-size: x-large;text-decoration: underline;color: rgb(68, 105, 31);}
+#outras {font-size: x-large;background-color: darkkhaki;line-height: 50px;width: 18%;}
+li:hover {color: rgb(18, 104, 18);}
+#thobbies {font-size: x-large;text-decoration: underline;color: rgb(156, 132, 100);}
+#hobbies {font-size: x-large;background-color: rgb(155, 89, 89);line-height: 70px;width: 27%;}
+#bola {position: relative;float: right;width: 140px;top: -80px;}
+#controle {position: relative;float: right;width: 120px;top: -60px;left: -50px;}
+#linkfoto {font-size: x-large;padding: 10px;background-color: darkkhaki;text-decoration: none;border-radius: 10px;color: black;}
+#linktrybe {font-size: x-large;padding: 10px;background-color: rgb(68, 105, 31);text-decoration: none;border-radius: 10px;color: black;}
+#linksobre {font-size: x-large;padding: 10px;background-color: rgb(156, 132, 100);text-decoration: none;border-radius: 10px;color: black;}
+#linkhabilidades {font-size: x-large;padding: 10px;background-color:#c8c6c6;text-decoration: none;border-radius: 10px;color: black;}
+
+body {background-image: url(../fundo.jpg);background-color: rgb(240, 236, 229);}
+    
+    
+    
+    
