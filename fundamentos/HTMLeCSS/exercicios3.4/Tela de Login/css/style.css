@@ -1,0 +1,8 @@
+body {background-image: url(background.png);background-color: #820AD1;}
+#cpf {position: relative;display: inline;float: right;margin-right: 1030px;margin-top: 250px;right: -1000px; top: -100px;display: block;line-height: 60px;}
+#senha {position: relative;display: inline;float: right;margin-right: 600px;margin-top: 110px;right: -569px;top: -150px;line-height: 60px;}
+#login {text-align: center;position: relative;bottom: -80px;font-size: x-large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+ article {background-color: white;height: 600px;float: right;position: relative;left: -500px;bottom: -100px;width: 400px;border-radius: 3%;}
+#continuar {right: -130px;position: relative;top: -90px;padding: 15px;text-decoration: none;background-color: rgb(97, 97, 233);color: black;font-size: x-large;border-radius: 10%;}
+.links {right: -115px;position: relative;font-size: large;top: -60px;}
+#continuar:hover {background-color: rgb(179, 173, 173);}
