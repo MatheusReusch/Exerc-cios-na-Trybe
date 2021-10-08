@@ -31,9 +31,28 @@ if (a1 < 0 || a2 < 0 || a3 < 0) console.log('ERRO')
 else if (a1 + a2 + a3 === 180) {console.log(true)}
 else {console.log(false)}
 
+let peça = 'cavalo';
 
+if (peça === 'bispo') {console.log('diagonais')}
+else if (peça === 'peao') {console.log('Para frente')}
+else if (peça === 'torre') {console.log('Horizontais')}
+else if (peça === 'cavalo') {console.log('salto')}
+else {console.log('ERROR')}
 
+let nota = 100;
 
+if (nota > 100 || nota < 0) {console.log('invalid')}
+else if (nota >= 90) {console.log('A')}
+else if (nota >= 80) {console.log('B')}
+else if (nota >= 70) {console.log('C')}
+else if (nota >= 60) {console.log('D')}
+else if (nota >= 50) {console.log('E')}
+else if (nota < 50) {console.log('F')}
 
+const joao = 19;
+const maria = 20;
+const matheus = 18;
 
+if (joao % 2 == 1 || maria % 2 == 1 || matheus % 2 == 1) {console.log(true)}
+else {console.log(false)}
 
