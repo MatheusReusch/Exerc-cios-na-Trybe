@@ -56,3 +56,28 @@ const matheus = 18;
 if (joao % 2 == 1 || maria % 2 == 1 || matheus % 2 == 1) {console.log(true)}
 else {console.log(false)}
 
+const custo = 30;
+const impostos = custo * 0.2;
+const venda = 40;
+const custoTotal = custo + impostos;
+const lucro = (venda - custoTotal) * 1000;
+console.log(lucro)
+
+let bruto = 7000;
+
+if (bruto <= 1556.94) {deducao1 = bruto * 0.08}
+else if (bruto >= 1556.95 && bruto <= 2594.92) {deducao1 = bruto * 0.09}
+else if (bruto >= 2594.93 && bruto <= 5189.82) {deducao1 = bruto * 0.11}
+else if (bruto > 5189.82) {deducao1 = 570.88}
+
+let base = bruto - deducao1;
+
+if (base < 1903.98) {deducao2 = 0}
+else if (base >= 1903.99 && base <= 2826.65) {deducao2 = (base * 0.075) - 142.80}
+else if (base >= 2826.65 && base <= 3751.05) {deducao2 = (base * 0.15) - 354.80}
+else if (base >= 3751.06 && base <= 4664.68) {deducao2 = (base * 0.225) - 636.13}
+else if (base > 4664.68) {deducao2 = (base * 0.275) - 869.36}
+
+let liquido = bruto - deducao1 - deducao2;
+
+console.log(liquido)
