@@ -14,8 +14,18 @@ else if (currentHour >= 18 && currentHour < 22) {message ="Rango da noite, vamos
 else if (currentHour >= 14 && currentHour < 18) {message="Vamos fazer um bolo pro café da tarde?"}
 else if (currentHour > 11 && currentHour < 14) {message="Hora do almoço!!!"}
 else if (currentHour > 4 && currentHour < 11) {message="Hmmm, cheiro de café recém passado"}
-let weekDay = 'quarta';
 if (weekDay == 'segunda' || 'terca' || 'quarta' || 'sexta') {console.log("Oba, mais um dia de aprendizado na Trybe >:D")}
 else {console.log("FINALMENTE, descanso merecido UwU")}
+let weekDay = 'quinta';
+switch (weekDay) {
+    case 'quarta': 
+    console.log('é quarta') 
+    break;
+    case 'sexta': 
+    console.log('é sexta')
+    break;
+    default:
+    console.log('nao sei')    
+}
 console.log
 console.log(message) 
