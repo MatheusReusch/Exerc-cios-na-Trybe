@@ -1,0 +1,42 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+      document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'green'
+      document.getElementById('primeiroFilhoDoFilho').innerText = 'Harry Potter'
+      document.getElementById('primeiroFilhoDoFilho').style.color = 'red'
+      document.getElementById('pai').firstChild.innerText = 'Primeiro filho'
+      document.getElementById('pai').firstChild.style.color = 'black'
+      document.getElementById('elementoOndeVoceEsta').previousSibling
+      document.getElementById('elementoOndeVoceEsta').parentNode
+      document.getElementById('ElementoOndeVoceEsta').nextSibling
+      document.getElementById('pai').firstChild.nextSibling.nextSibling
+      let juventude = 'Matheus';
+      let pai = document.getElementById('pai');
+      let irmaoItem = document.createElement('p');
+      irmaoItem.innerText = juventude;
+      pai.appendChild(irmaoItem);
+
+      let filho = 'Thiago'
+      let eu = document.getElementById('elementoOndeVoceEsta');
+
+      let filhoItem = document.createElement('section')
+      filhoItem.innerText = filho
+      eu.appendChild(filhoItem);
+
+      let filhoDoFilho = document.getElementById('primeiroFilhodoFilho');
+      let filho3 = 'Jorge';
+
+      let filho3Item = document.createElement('section')
+      filho3Item.innerText = filho3
+      filhoDoFilho.appendChild(filho3Item)
+  </script>

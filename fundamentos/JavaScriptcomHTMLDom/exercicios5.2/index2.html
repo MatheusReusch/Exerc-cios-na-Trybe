@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+        margin-right: auto;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <script>
+      let titulo = document.createElement('h1')
+      titulo.innerText = 'Exercício 5.2 - JavaScript DOM'
+      let titulopai = document.querySelector('#body');
+      titulopai.appendChild(titulo)
+
+      let principal = document.createElement('main')
+      principal.className = 'main-content'
+      let principalpai = document.querySelector('#body')
+      principalpai.appendChild(principal)
+
+      let secao = document.createElement('section')
+      secao.className = 'center-content'
+      let secaopai = document.querySelector('.main-content')
+      secaopai.appendChild(secao)
+
+      let paragrafo = document.createElement('p')
+      paragrafo.innerText = 'Trybe é a escola do futuro'
+      let paragrafopai = document.querySelector('.center-content')
+      paragrafopai.appendChild(paragrafo)
+
+      let secao2 = document.createElement('section')
+      secao2.className = 'left-content'
+      let secao2pai = document.querySelector('.main-content')
+      secao2pai.appendChild(secao2)
+
+      let secao3 = document.createElement('section')
+      secao3.className = 'right-content'
+      let secao3pai = document.querySelector('.main-content')
+      secao3pai.appendChild(secao3)
+
+      let image = document.createElement('img')
+      image.src = 'https://picsum.photos/200'
+      image.className = 'small-image'
+      let imagepai = document.querySelector('.left-content')
+      imagepai.appendChild(image)
+
+      let listapai = document.querySelector('.right-content')
+      let numeros = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
+
+      for (i = 0; i < numeros.length; i += 1) { 
+          lista = document.createElement('li')
+          lista.innerText = numeros[i]
+          lista.className = 'numbers'
+          listapai.appendChild(lista)
+      }
+
+      let subtitulo = document.createElement('h3')
+      subtitulo.className = 'description'
+      let subtitulopai = document.querySelector('.main-content')
+      subtitulopai.appendChild(subtitulo)
+
+      let subtitulo2 = document.createElement('h3')
+      subtitulo2.className = 'description'
+      let subtitulo2pai = document.querySelector('.main-content')
+      subtitulo2pai.appendChild(subtitulo2)
+
+      let subtitulo3 = document.createElement('h3')
+      subtitulo3.className = 'description'
+      let subtitulo3pai = document.querySelector('.main-content')
+      subtitulo3pai.appendChild(subtitulo3)
+
+      let title = document.createElement('title')
+      let titlepai = document.querySelector('h1')
+      titlepai.appendChild(title)
+
+      secao2pai.removeChild(secao2)
+
+      document.querySelector('.center-content').parentNode.style.backgroundColor = 'green'
+
+      let listas = document.querySelectorAll('.numbers')
+
+      for (i = 0; i < listas.length; i += 1) {
+      let element = listas[i];     
+        if (element.innerText.includes('dez') || element.innerText.includes('nove')) {
+         listapai.removeChild(element)
+     }
+      }
+    </script>
+  </body>
+</html>
