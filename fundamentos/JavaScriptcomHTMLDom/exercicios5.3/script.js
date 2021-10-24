@@ -68,6 +68,74 @@ function createButton2() {
   function zoom (event) {
       let elemento = event.target
       elemento.style.fontSize = '30px'
-      console.log(document.querySelectorAll('.day'))
+      
   }
   diasDoMes.addEventListener('mouseover', zoom) }
+
+  for (i = 0; i < document.querySelectorAll('.day').length; i += 1)
+  {let diasDoMes = document.querySelectorAll('.day')[i] 
+  function zoomout (event) {
+      let elemento = event.target
+      elemento.style.fontSize = '15px'
+       } diasDoMes.addEventListener('mouseleave', zoomout)
+  }
+
+  function tarefa (cozinhar) {
+    let task = document.createElement('span')
+    task.innerText = cozinhar;
+    let taskpai = document.querySelector('.my-tasks')
+    taskpai.appendChild(task)
+  }
+
+  function legenda(cor) {
+    let myDiv = document.createElement('div')
+    myDiv.style.backgroundColor = cor
+    myDiv.className = 'task'
+    myDiv.innerText = 'D'
+    let divpai = document.querySelector('.my-tasks')
+    divpai.appendChild(myDiv)
+
+  }
+
+  function legenda2(cor) {
+    let myDiv = document.createElement('div')
+    myDiv.style.backgroundColor = cor
+    myDiv.className = 'task'
+    myDiv.innerText = 'A'
+    let divpai = document.querySelector('.my-tasks')
+    divpai.appendChild(myDiv)
+  }
+
+  function legenda3(cor) {
+    let myDiv = document.createElement('div')
+    myDiv.style.backgroundColor = cor
+    myDiv.className = 'task'
+    myDiv.innerText = 'C'
+    let divpai = document.querySelector('.my-tasks')
+    divpai.appendChild(myDiv)
+  }
+
+  tarefa('Durmir')
+  tarefa('Almoçar')
+  tarefa('Cozinhar')
+  legenda('green')
+  legenda2('red')
+  legenda3('pink')
+
+  for (i = 0; i < 3; i += 1) {
+    let cores = document.getElementsByClassName('task')[i]
+      
+    function selecao () {
+      if (cores.innerText == 'D') {document.getElementsByTagName('span')[0].className = 'task selected'}
+      else if (cores.innerText == 'A') {document.getElementsByTagName('span')[1].className = 'task selected'}
+      else if (cores.innerText == 'C') {document.getElementsByTagName('span')[2].className = 'task selected'}
+      console.log('funcionou')
+    }
+    cores.addEventListener('click', selecao)}
+  
+
+
+  
+    
+
+  
