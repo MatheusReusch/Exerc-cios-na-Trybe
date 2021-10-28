@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+   <header id="header">
+    <h1 id="titulo">Formulário</h1>
+    <p> <em>Preencha para concorrer a uma vaga!</em></p>
+   </header>
+    <form action="" method="GET" id="formulario">
+       <fieldset id="dados-pessoais">
+           <legend>Dados pessoais</legend>
+           <label for="nome">Seu nome: <input maxlength="40" id="nome" type="text" name="nome-da-pessoa" required></label> <br>
+           <label for="email">Seu email: <input id="email" type="text" maxlength="50" required name="email-da-pessoa"></label> <br>
+           <label for="">Seu CPF: <input type="text" maxlength="11" required name="cpf-da-pessoa"></label> <br>
+           <label for="">Seu endereço: <input type="text" maxlength="200" required name="endereco-da-pessoa"></label> <br>
+           <label for="">Sua cidade: <input type="text" name="cidade-da-pessoa" required maxlength="28"></label> <br>
+           <label for="">Seu estado: <select name="estado-da-pessoa">
+             <option value="sp">São Paulo</option>
+             <option value="rs">Rio Grande do Sul</option>
+             <option value="mg">Minas Gerais</option>
+             <option value="sc">Santa Catarina</option>
+             <option value="rj">Rio de Janeiro</option>
+           </select></label> <br>
+           <label for="casa"><input id="casa" type="radio" name="moradia" value="home">Casa</label>
+           <label for="apartamento"><input id="apartamento" type="radio" name="moradia" value="apartment">Apartamento</label> <br>
+       </fieldset>
+       <fieldset id="cargo">
+           <legend>Informações do cargo</legend>
+           <textarea name="resumo-curriculo" id="" cols="30" rows="10" required maxlength="1000"></textarea> <br>
+           <label for="">Seu cargo: <input type="text" name="cargo" required maxlength="40"></label> <br>
+           <label for="">Descrição do cargo: <input type="text" name="descrição" required max="500"></label> <br>
+           <label for="">Data de início: <input type="date" name="data-de-inicio" required></label> <br>
+           <button id="botao" type="submit"><span id="enviar">Enviar</span></button>      
+        </fieldset>
+   </form>
+   <br>
+   <p id="curriculo"></p> 
+<script src="script.js"></script>
+</body>
+</html>

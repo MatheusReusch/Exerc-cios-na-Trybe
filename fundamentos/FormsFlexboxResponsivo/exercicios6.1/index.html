@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form method="GET">
+    <label for="input-text">Digite seu nome</label>  
+    <input type="text" required value="matheus" id="input-text" name="texto">
+    <br>
+    <textarea name="" id="" cols="30" rows="10">texto já estabelecido</textarea>
+    <br>
+    <input type="checkbox" value="fut" name="checkbox">Futebol
+    <input type="checkbox" value="vol" name="checkbox">Volei
+    <input type="checkbox" value="bas" name="checkbox">Basquete  
+    <br>
+    <label for="hub1"><input type="radio" id="hub1" name="hubs" value="sp">São Paulo</label>
+    <input type="radio" id="hub2" name="hubs" value="fr">Floripa
+    <br>
+    <select name="estado" id="dropdownEstado">
+        <option value="sp">SP</option>
+        <option value="rs">RS</option>
+    </select>
+    <input name="senha" required placeholder="Digite sua Senha" type="password"> <br>
+    <input name="imagem" type="file"> <br>
+    <input type="reset" name="" id=""> <br>
+    <input type="email" required autocomplete="off" autofocus placeholder="Digite seu email" name="email" id=""> <br>
+    <input type="checkbox" name="" id="">Lembre-me <br>
+    <button>Entrar</button> <br>
+    <button type="submit">Enviar</button>
+  </form>    
+
+
+
+</body>
+</html>
