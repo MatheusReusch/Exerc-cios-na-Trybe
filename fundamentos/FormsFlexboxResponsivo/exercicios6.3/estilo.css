@@ -1,0 +1,31 @@
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.div {
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    width: 25%;
+}
+
+#caixas {
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 700px;
+    align-content: space-evenly;
+    width: 800px;
+    margin-left: 550px;
+}
