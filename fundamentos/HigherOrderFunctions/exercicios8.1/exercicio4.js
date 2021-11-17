@@ -47,27 +47,23 @@ let manaConsumida;
     return objeto
  }
 
-mostra(danoDragao)
-mostra(danoWarrior)
-console.log(mago().dano)
-
 const gameActions = {
     turnoWarrior: () => {
-      dragon.healthPoints = dragon.healthPoints - danoDragao()
-      warrior.damage = danoWarrior()
-      return battleMembers
+      let danodoWarrior = danoWarrior()
+      dragon.healthPoints = dragon.healthPoints - danodoWarrior
+      warrior.damage = danodoWarrior
     },
     turnoMage: () => {
-       dragon.healthPoints = dragon.healthPoints - mago().dano
-       mage.damage = mago().dano
+       let danodoMago = mago().dano
+       dragon.healthPoints = dragon.healthPoints - danodoMago
+       mage.damage = danodoMago
        mage.mana = mage.mana - mago().manaConsumida
-       return battleMembers
     },
     turnoDragon: () => {
-      mage.healthPoints = mage.healthPoints - danoDragao()
-      warrior.healthPoints = warrior.healthPoints - danoDragao()
-      dragon.damage = danoDragao()
-      return battleMembers
+      let danodoDragao = danoDragao()
+      mage.healthPoints = mage.healthPoints - danodoDragao
+      warrior.healthPoints = warrior.healthPoints - danodoDragao
+      dragon.damage = danodoDragao
     },
     final: () => {
         gameActions.turnoWarrior()
