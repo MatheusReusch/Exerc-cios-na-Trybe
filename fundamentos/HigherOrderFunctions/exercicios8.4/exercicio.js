@@ -155,3 +155,20 @@ console.log(studentAverage())
   //{ name: 'Miguel', average: 9.2 },
   //{ name: 'Maria Clara', average: 8.8 },
 //];
+function genre() {
+ return books.map((livro, indice) => {
+    return {nome: livro.name, genre: livro.genre} 
+  })
+}
+
+console.log(genre())
+
+function namesOrd () {
+  return books.reduce((acc, livro, indice) => {
+    if (livro.name.length > acc.name.length) {acc = livro}
+    else if (livro.name.length < acc.name.length) {acc = acc}
+    return acc
+  })
+}
+
+console.log(namesOrd())

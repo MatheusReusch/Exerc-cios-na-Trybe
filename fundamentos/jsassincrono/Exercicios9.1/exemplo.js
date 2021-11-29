@@ -56,5 +56,3 @@ const monthlyBudget = (myIncome, myExpenses, callback) => {
 monthlyBudget(myIncome, myExpenses, handleExpenses);
 
 
-
-
