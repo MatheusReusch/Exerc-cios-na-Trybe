@@ -37,25 +37,12 @@
   }
 }
 
-.image {
-  width: 150px;
-  height: 150px;
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#root {
-  margin-left: 10%;
-}
-
-.fieldset {
-  width: 15%;
-  margin-top: 5px;
-}
-
-.imagem {
-  list-style-type: none;
-}
-
-.buy {
-  text-decoration: underline;
-  color: green;
+.none {
+  display: none;
 }
