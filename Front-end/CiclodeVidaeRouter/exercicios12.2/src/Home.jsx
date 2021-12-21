@@ -45,6 +45,7 @@ class Home extends React.Component {
             <Link to='/movies/Cabana do medo'>Filmes</Link>
             <Link to='/access'>Acessar conta</Link>
             <Link to='/aboutpokedex'>Sobre a Pokedex</Link>
+            <Link to='/favoritos'>Pokemons Favoritos</Link>
             {pokes}
             </div>
         )

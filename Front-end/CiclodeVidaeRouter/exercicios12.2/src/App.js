@@ -8,6 +8,7 @@ import Movies from './Movies';
 import StrictAccess from './StrictAccess';
 import PokemonDetails from './PokemonDetails';
 import Pokedex from './Pokedex';
+import Favoritos from './Favoritos';
 
 class App extends React.Component {
   render () {
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Route path='/access' render={() => <StrictAccess user={{name: 'joao', password: '1234'}} />}></Route>
         <Route path='/pokemons/:id' render={(props) => <PokemonDetails {...props} />}></Route>
         <Route path='/aboutpokedex' component={Pokedex}></Route>
+        <Route path='/favoritos' render={() => <Favoritos />}></Route>
       </BrowserRouter>
     );
   }
