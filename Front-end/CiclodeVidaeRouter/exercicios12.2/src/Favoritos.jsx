@@ -14,18 +14,18 @@ class Favoritos extends React.Component {
                 array.push(document.getElementsByClassName('field')[i])
         }
         }
-        console.log(array[0].innerHTML)
+        console.log(array.length)
         return (
           <div>
           <h1>Favoritos</h1>
-          <>{array.map((poke) => {
+          <>{array.length > 0 ? array.map((poke) => {
               console.log(poke.firstChild.innerText)
             return <fieldset>
                 <li>{poke.firstChild.innerText}</li>
                 <li>{poke.firstChild.nextSibling.innerText}</li>
                 <img alt='imagem do pokemon' src={poke.firstChild.nextSibling.nextSibling.src}></img>
             </fieldset>
-          })}</>
+          }) : 'Nenhum pokemon foi favoritado'}</>
           <Link to='/'>Pokedéx</Link>  
           </div>
         )
