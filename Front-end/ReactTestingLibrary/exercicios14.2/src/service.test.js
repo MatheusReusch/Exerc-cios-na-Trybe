@@ -72,7 +72,7 @@ test('3 funções', () => {
 
 })
 
-test('Fetch dos dogs', async () => {
+test('Fetch dos dogs funcionou', async () => {
     global.fetch = jest.fn().mockResolvedValue({
         json: jest.fn().mockResolvedValue({
             message: "https://images.dog.ceo/breeds/terrier-toy/n02087046_3311.jpg",
@@ -81,4 +81,15 @@ test('Fetch dos dogs', async () => {
     })
 
     expect(await fetchDog()).toBe("success")
+})
+
+test('Fetch dogs não funcionou', async () => {
+    global.fetch = jest.fn().mockResolvedValue({
+        json: jest.fn().mockResolvedValue({
+        message: "https://images.dog.ceo/breeds/terrier-toy/n02087046_3311.jpg",
+        status: "failure"
+        })
+    })
+
+    expect(await fetchDog()).toBe('failure')
 })
